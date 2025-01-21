@@ -22,6 +22,7 @@ class MysqlConfiguration(
         .user("test")
         .password("test")
         .createDatabaseIfNotExist(true)
+        .metrics(true)
         .build()
         .let(MySqlConnectionFactory::from)
 }
